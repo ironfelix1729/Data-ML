@@ -31,8 +31,7 @@ We also add columns to take care of tick events.
 At this point we split our data into training and test. We will consider last 6 days for the test.
 Then we do z-normalization of train and test data by train mean and sd. it's crucial to not use test mean or sd to prevent leakage.
 
-With this pipeline linear regression achieved an R^2 of 0.012 on test data. Our custom nn which involved bilinear layers and multi headed attention layers improved it to 0.018. 
-The point of Bilinear layers is to learn the interaction across time and attention layers (with masking) learn the relative strength of the interactions. 
+Now the data is ready for our models starting with linear regression. Our custom nn which involved bilinear layers and multi headed attention layers, however i'm unable to share the precise architecture for propreitary reasons. The point of Bilinear layers is to learn the interaction across time and attention layers (with masking) learn the relative strength of the interactions. 
 
 
 
